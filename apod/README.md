@@ -4,7 +4,13 @@ Playing with NASA's APOD API - enter your birthday and retrieve the image and in
 
 > Yes I know hard coding an API key is naughty.
 
-## TODO 
+## Run Locally
+
+1. Download folder.
+2. Navigate to `index.html` on browser.
+3. Enjoy.
+
+## To Do
 
 - Validation on user input. 
 - Styling on form submissions 
