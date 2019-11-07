@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>APOD Birthday</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <script type="text/javascript" src="fetchdata.js"></script>
+  </head>
+  <body>
+    <h1>What was NASA's APOD on your birthday?</h1>
+
+    <h4>What is <a href="https://apod.nasa.gov/apod/astropix.html">APOD</a>?</h4>
+    <p id="intro">"Astonomy picture of the day - each day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer."</p>
+
+    <h4>When is your birthday?</h4>
+      <form id="birthdayform" onsubmit="getData(); return false;" method="post"> 
+        <div>
+          <input name="date" id="input-date">
+        </div>
+        <div>
+          <input value="Click Me" type="submit" />
+        </div>
+      </form>
+
+    <div id="results">
+      <h1>Results</h1>
+        <h2>Title</h2><h3 id="title"></h3>
+        <h2>Date</h3><h3 id="photo-date"></h3>
+        <h2>Image</h2><img id="pic" src="" alt="NASA Picture Of The Day" width="100%">
+        <h2>Caption</h2><p id="caption"></p>
+    </div>
+  </body>
+</html>
